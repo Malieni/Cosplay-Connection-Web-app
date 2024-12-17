@@ -5,7 +5,7 @@ This is a FullStack Cosplay Connection App built with Node.js, Express.js, Mongo
 React.js. The app allows users to create an account, login, and connect with other cosplayers
 based on their interests.
 ### Features
-* User Authentication
+* User Authentication teste
 * User Profile Management
 * Interest-based Connection System
 * Real-time Chat Functionality
