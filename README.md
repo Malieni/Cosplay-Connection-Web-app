@@ -19,7 +19,7 @@ Este é um aplicativo de Conexão Cosplay FullStack construído com Node.js, Exp
 ### Configuração
 1. Instale o Node.js e o MongoDB em sua máquina local.
 2. Clone o repositório e navegue até o diretório do projeto.
-3. Configure o docker e seja feliz 
+3. Estamos resolvendo o problema de conexão com o servidor 
 
 ### Endpoints da API
 * `POST /api/users`: Criar uma nova conta de usuário.
