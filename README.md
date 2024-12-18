@@ -11,6 +11,7 @@ Este é um aplicativo de Conexão Cosplay FullStack construído com Node.js, Exp
 * Frontend: React.js
 * Backend: Node.js, Express.js
 * Banco de Dados: MongoDB
+* Conteiner virtual: Docker
 ### Configuração
 1. Instale o Node.js e o MongoDB em sua máquina local.
 2. Clone o repositório e navegue até o diretório do projeto.
