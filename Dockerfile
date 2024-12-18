@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN npm install --force
 COPY . .
 EXPOSE 3002
-CMD ["node", "server/index.js"]
+CMD ["sh", "-c", "node server/data/index.js && node server/index.js"]

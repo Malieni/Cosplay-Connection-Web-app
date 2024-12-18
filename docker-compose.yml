@@ -1,23 +1,26 @@
-version: '3.8'
-
+version: "3.9"
 services:
-  mongodb:
-    image: mongo:latest
-    container_name: mongodb-container 
-    ports: 
-      - "27017:27017"
-    volumes:
-      - mongodb_data:/data/db
-
-  nodeapp:
-    build: .
+  node_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: node_app
     ports:
       - "3002:3002"
-    depends_on:
-      - mongodb
     environment:
-      - MONGO_URL=mongodb://mongodb-container:27017/coscon  
+      - MONGO_URL=mongodb://mongo_db:27017/coscon
+      - PORT=3002
+    depends_on:
+      - mongo_db
+
+  mongo_db:
+    image: mongo:latest
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
 
 volumes:
-  mongodb_data:
+  mongo_data:
+
